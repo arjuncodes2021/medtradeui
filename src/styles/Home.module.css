@@ -1,0 +1,49 @@
+/* .counts {
+    margin: 5px 0;
+    color: var(--text-color-primary);
+    padding: 9px;
+    padding-bottom: 0px;
+    position:relative;
+  } */
+
+  /* If the screen size is 721px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 720px) {
+  .detailsPanelLabel {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+
+  .detailsPanelValue {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .counts {
+    margin: 5px 0;
+    color: var(--text-color-primary);
+    padding: 9px;
+    padding-bottom: 0px;
+    position:relative;
+    font-size: 15px;
+  }
+}
+
+/* If the screen size is 720px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 720px) {
+  .detailsPanelLabel {
+    font-size: 11px;
+    margin-left: 6px;
+  }
+
+  .detailsPanelValue {
+    font-size: 8px;
+    margin-left: 15px;
+  }
+  .counts {
+    margin: 5px 0;
+    color: var(--text-color-primary);
+    padding: 9px;
+    padding-bottom: 0px;
+    position:relative;
+    font-size: 10px;
+  }
+}

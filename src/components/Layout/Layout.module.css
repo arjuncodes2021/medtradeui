@@ -1,0 +1,157 @@
+/* If the screen size is 720px wide or more, set the font-size of <div> to 15px */
+@media screen and (min-width: 720px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-width: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: left;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 100%;
+    background-color: #fcf4a3;
+    padding:1rem 1rem;
+    /* height: 100px; */
+
+  }
+
+  .headerTitle {
+    flex: 25;
+    font-size: 21px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin: 0px;
+    /* padding: auto; */
+  }
+  .headerAbout {
+    flex: 1;
+    font-size: 18px;
+    margin-top: 2px;
+    /* padding:1rem 1rem; */
+  }
+
+  .header button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .footer {
+    background: #fcf4a3;
+    padding: 0.2rem 0rem;
+    color: inherit;
+    font-size: 15px;
+    /* margin-top: 5px; */
+    text-align: center;
+    height: 127px;
+    padding: 0.2rem 0.1rem;
+    margin-bottom: 0px;
+
+  }
+
+  .footerContainer{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .header_kew{
+    flex:1;
+    justify-content:start;
+  }
+
+  .header_tdu{
+    flex:1;
+    justify-content: flex-start;
+  }
+  .footerDevelopedBy{
+    flex:1;
+    text-align:center;
+    margin-top: 90px;
+  }
+}
+
+/* If the screen size is 720px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 720px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-width: 100%;
+    /* margin: 0 auto; */
+  }
+
+  .header {
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: left;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fcf4a3;
+  }
+
+  .headerTitle {
+    flex: 25;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin: 0px;
+  }
+
+  .headerAbout {
+    flex: 1;
+    font-size: 17px;
+    margin-top: 2px;
+    /* padding:1rem 1rem; */
+  }
+
+  .header button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+  .footer {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: center;
+
+    background: #fcf4a3;
+    padding: 0.2rem 0.1rem;
+    /* color: inherit; */
+    
+    height: 127px;
+  }
+
+  .footerContainer{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .header_kew{
+    flex:1;
+    justify-content:start;
+  }
+
+  .header_tdu{
+    flex:1;
+    justify-content: flex-start;
+  }
+  .footerDevelopedBy{
+    flex:1;
+    text-align:center;
+    margin-top: 90px;
+  }
+}

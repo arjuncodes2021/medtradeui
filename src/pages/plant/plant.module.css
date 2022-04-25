@@ -1,0 +1,148 @@
+/* If the screen size is 721px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 720px) {
+
+  .container {
+    display: flex;
+   flex-wrap: wrap;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+
+  /* .container_left {
+    grid-column: 1 / span 4;
+  } */
+
+  .container_right {
+    grid-column: 1 / span 12;
+    flex: 1 100%;
+  }
+  
+  div.details_panel_heading{
+    font-size: 18px;
+  }
+  div.details_panel_row,
+  div.details_panel_label,
+  div.details_panel_value ,
+  div.cni_details_panel_row_language,
+  div.cni_details_panel_row_common_names{
+    font-size: 13px;
+  }
+}
+
+/* If the screen size is 720px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 720px) {
+
+  .container {
+    display: flex;
+   flex-wrap: wrap;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+
+  /* .container_left {
+    grid-column: 1 / span 4;
+  } */
+
+  .container_right {
+    grid-column: 1 / span 12;
+    flex: 1 100%;
+  }
+
+  div.details_panel_heading{
+    font-size: 14px;
+  }
+
+
+  div.details_panel_row,
+  div.details_panel_label,
+  div.details_panel_value,
+  div.cni_details_panel_row_language,
+  div.cni_details_panel_row_common_names{
+    font-size: 10px;
+  }
+}
+
+
+.details_panel {
+  background-color: var(--background-color-light);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+}
+
+.details_panel_heading {
+  font-weight: 550;
+
+  padding: 20px;
+  padding-bottom: 0;
+
+  margin: 0;
+}
+
+.details_panel_row {
+  display: flex;
+  justify-content:space-between;
+  /* flex-direction: row; */
+  /* flex: 1 auto; */
+  /* flex-wrap: wrap; */
+  /* column-gap: 400px; */
+
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.details_panel_label {
+  color: var(--text-color-primary);
+  font-weight: bolder;
+  flex: 1;
+  /* display: flex; */
+  /* flex-basis: 100%; */
+  /* justify-content:left; */
+  /* padding-right: 300px; */
+}
+.details_panel_value {
+  color: var(--text-color-primary);
+  flex: 2;
+  /* justify-content:left; */
+}
+.tdi_details_panel_row {
+  display: flex;
+  justify-content: space-between;
+  /* column-gap: 600px; */
+
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.cni_details_panel_row_language{
+  flex: 1;
+  font-weight: 550;
+}
+
+.cni_details_panel_row_common_names{
+  flex: 2;
+  font-weight: 550;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+
+
+/* .div.details_panel_value:hover {
+  color: var(--text-color-secondary);
+  background-color:  var(--text-color-primary);
+}
+
+.Accordian.accordian_details_panel_row:hover{
+  color: var(--text-color-secondary);
+  background-color:  var(--text-color-primary);
+} */
+
+.div.accordian_panel:hover{
+  background: blue; /* make this whatever you want */
+  }
+
+
+
+

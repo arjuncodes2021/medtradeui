@@ -1,0 +1,183 @@
+.heading {
+  display: flex;
+  padding: 4px;
+}
+
+.heading button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  padding: 0.3px;
+
+  text-align: center;
+
+  background-color: var(--background-color-light);
+  border-radius: 8px;
+  margin-bottom: 14px;
+
+  margin-left: 8px;
+  margin-right: 8px;
+
+  box-shadow: var(--box-shadow);
+  font-weight: 500;
+
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.row:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* .paginationBttns {
+  width: 99.5%;
+  padding: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  height: 20px;
+  list-style: none;
+  display: flex;
+  justify-content:center;
+  font-size: 10px;
+} */
+
+.paginationBttns a {
+  padding: 7px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--text-color-primary);
+  color: var(--text-color-primary); 
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.paginationBttns a:hover {
+  color: var(--text-color-secondary);
+  background-color:  var(--text-color-primary);
+}
+
+.paginationActive a {
+  color: white;
+  background-color: var(--text-color-secondary);
+}
+
+.paginationDisabled a {
+  color: transparent;
+  background-color:transparent;
+}
+
+.previousBttn{
+  display: none;
+}
+.nextBttn {
+  display:none;
+}
+
+/* If the screen size is 720px wide or more, set the font-size of <div> to 15px */
+
+@media screen and (min-width: 720px) {
+.heading_scientificName,
+.heading_tradeName,
+.heading_matchedWith{
+  flex: 4;
+  color: var(--text-color-primary);
+  font-weight: bolder;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+
+}
+.heading_scientificName{
+  justify-content: flex-start;
+}
+
+.scientificName {
+  flex: 4;
+  text-align: left;
+  color: var(--text-color-primary);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.tradeName {
+  flex: 4;
+  color: var(--text-color-primary);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.matchedWith {
+  flex: 4;
+  color: var(--text-color-primary);
+  font-size: 15px;
+  cursor: pointer;
+}
+.paginationBttns {
+  width: 99.5%;
+  padding: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  height: 20px;
+  list-style: none;
+  display: flex;
+  justify-content:center;
+  font-size: 15px;
+}
+}
+
+/* If the screen size is 720px wide or less, set the font-size of <div> to 10px */
+@media screen and (max-width: 720px) {
+  .heading_scientificName,
+  .heading_tradeName,
+  .heading_matchedWith{
+  flex: 4;
+  color: var(--text-color-primary);
+  font-weight: bolder;
+  font-size: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading_scientificName{
+  justify-content: flex-start;
+}
+.scientificName {
+  flex: 4;
+  text-align: left;
+  color: var(--text-color-secondary);
+  font-size: 10px;
+}
+
+.tradeName {
+  flex: 4;
+  color: var(--text-color-secondary);
+  font-size: 10px;
+}
+
+.matchedWith {
+  flex: 4;
+  color: var(--text-color-secondary);
+  font-size: 10px;
+}
+.paginationBttns {
+  width: 99.5%;
+  padding: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  height: 20px;
+  list-style: none;
+  display: flex;
+  justify-content:center;
+  font-size: 10px;
+}
+}
